@@ -16,7 +16,7 @@
       <div class="col">
         <div class="idea">
           <div class="idea_img">
-            <img class="ideaimg" src="/assets/AdobeStock_68065535.jpeg">
+              <%= image_tag idea.image, class: 'ideaimg' if message.image.attached? %>
           </div>
           <div class="idea_info">
             「秩序」「飾り」「美しい」という意味のギリシャ語に由来
