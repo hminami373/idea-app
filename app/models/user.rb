@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
   validates :introduction, presence: true
+
+  has_many :rooms
 end
