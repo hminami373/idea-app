@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :introduction, presence: true
 
   has_many :rooms
+  has_many :ideas
 end
