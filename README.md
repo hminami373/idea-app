@@ -8,7 +8,7 @@
 | nickname           | string | null: false |
 | email              | string | null: false |
 | encrypted_password | string | null: false |
-| introduce          | text   | null: false |
+| introduce          | string | null: false |
 
 ### Association
 
