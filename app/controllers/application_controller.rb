@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::Base
-  root to: "roomss#index"
+  root to: "rooms#index"
 end
