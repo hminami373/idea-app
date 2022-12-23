@@ -1,7 +1,8 @@
 class IdeasController < ApplicationController
 
   def index
-    @idea = Idea.find(params[:idea_id])
+    # @idea = Idea.find(params[:idea_id])
+    # @room = Room.find(params[:room_id])
   end
 
   def new

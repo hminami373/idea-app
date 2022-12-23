@@ -40,10 +40,9 @@ li {
   text-align: center;
 }
 .chat-room-form__label {
-  display: block;
+  /* display: block; */
   line-height: 50px;
   font-weight: bold;
-  text-align: right;
 }
 .chat-room-form__input {
   float: left;
@@ -73,11 +72,26 @@ li {
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
+  text-align: right;
+
 }
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .chat-room-form__field--right {
   float: right;
   width: 70%;
 }
+
+
 
 select {
   width: 500px;

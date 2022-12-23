@@ -16,7 +16,7 @@
       <div class="col">
         <div class="idea">
           <div class="idea_img">
-              <%= image_tag idea.image, class: 'ideaimg' if message.image.attached? %>
+              <%# image_tag idea.image, class: 'ideaimg' %>
           </div>
           <div class="idea_info">
             「秩序」「飾り」「美しい」という意味のギリシャ語に由来
@@ -28,7 +28,8 @@
         </div>
         <div class="idea">
           <div class="idea_img">
-            <img class="ideaimg" src="/assets/AdobeStock_434028177.jpeg">
+            
+            <%# link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
           </div>
           <div class="idea_info">
             メキシコの標高1600mに原産地がある。           
@@ -65,12 +66,12 @@
         </div>
         <div class="idea">
           <div class="idea_img">
-           ＋
+            <%= link_to image_tag("/assets/plus.png", class:"plus-btn"), new_room_idea_path %>           
           </div>
           <div class="idea_info">
           </div>
           <div class="idea-date">
-           ----/--/--(-) --:--:--
+          
           </div>
          </div>
       </div>

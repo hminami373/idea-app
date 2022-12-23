@@ -2,14 +2,45 @@
   <h1>新規お題部屋</h1>
   <%=form_with model: @room, local: true do |f|%>
     <%= render "error_messages", model: f.object %>
+    
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
         <%= f.label :theme, :お題, class: 'chat-room-form__label'%>
+        <span class="indispensable">必須</span>
       </div>
       <div class='chat-room-form__field--right'>
         <%= f.text_field :theme, class: 'chat__room_name chat-room-form__input', placeholder: '派生させたいお題を入力してください'%>
       </div>
     </div>
+
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :theme, :画像, class: 'chat-room-form__label'%>
+        <span class="indispensable">必須</span>
+      </div>
+
+      <%# 画像 %>
+      <div class='chat-room-form__field--right'>
+         <div class="click-upload">
+            <p>
+              クリックしてファイルをアップロード
+            </p>
+            <%= f.file_field :image, id:"image" %>
+          </div>     
+       </div>
+    </div>
+    <%# /画像 %>
+
+        <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :theme_info, :説明, class: 'chat-room-form__label'%>
+        <span class="indispensable">必須</span> 
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :theme_info, class: 'chat__room_name chat-room-form__input', placeholder: 'お題や画像に対して説明してください'%>
+      </div>
+    </div>
+
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'></div>
       <div class='chat-room-form__field--right'>
