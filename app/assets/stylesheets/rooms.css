@@ -125,6 +125,7 @@
   border: #ffd4dd solid 2px;
   border-radius: 5px;
   margin: 0 auto; 
+  position: relative;
 }
 
 .ideaimg {
@@ -135,17 +136,14 @@
   border-radius: 5px 5px 0 0;
   color: #434a54;
   font-size: 14px;
-  display:  table-cell;       /* テーブルセルにする */
-  vertical-align:  middle;    /* 中央寄せ */
 }
 
 .plus-btn {
   display: flex;
-  margin: auto;
-  text-align: center;
-
-
-  
+  margin: auto;  
+  position: absolute;
+  top: 75px;
+  left: 75px;
   }
 
 .idea_info{
