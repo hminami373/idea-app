@@ -1,6 +1,7 @@
 <div class='chat-room-form'>
   <h1>アイデア投稿</h1>
-  <%=form_with model: @idea, url: room_ideas_path, local: true do |f|%>
+  <%=form_with model:  @idea, url: room_ideas_path, local: true do |f|%>
+
     <%= render "rooms/error_messages", model: f.object %>
     
     <div class='chat-room-form__field'>

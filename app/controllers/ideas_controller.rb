@@ -10,7 +10,8 @@ class IdeasController < ApplicationController
   end
 
   def create
-    @idea = Idea.new(idea_params)
+    @room = Room.find(params[:room_id])
+    @idea = @room.ideas.new(idea_params)
     if @idea.save
       redirect_to root_path
     else

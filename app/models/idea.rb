@@ -3,5 +3,5 @@ class Idea < ApplicationRecord
   belongs_to :room
   has_one_attached :image
 
-  validates :image, :idea, presence: true
+  validates :image, :idea_info, presence: true
 end
